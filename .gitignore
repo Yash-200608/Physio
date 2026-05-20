@@ -1,0 +1,23 @@
+# Environment secrets
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Temp
+*.tmp
+*.mp3
+exports/*.csv
+exports/*.json
+*.pt

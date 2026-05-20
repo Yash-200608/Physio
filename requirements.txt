@@ -1,0 +1,9 @@
+# Computer Vision Processing Layer
+opencv-python>=4.10.0
+mediapipe>=0.10
+
+# Numerical Matrix Arrays
+numpy>=1.26
+
+# Configuration File Interfacing
+python-dotenv>=1.0
