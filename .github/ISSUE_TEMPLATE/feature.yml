@@ -1,0 +1,39 @@
+name: Feature request
+description: Propose a change that stays local-only (no network or LLM)
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What is hard or missing today?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What should change? Keep the engine on-device.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Metrics / posture math
+        - Camera / I/O
+        - HUD / display
+        - Exports
+        - Docs / CI
+        - Other
+    validations:
+      required: true
+  - type: checkboxes
+    id: constraints
+    attributes:
+      label: Constraints
+      options:
+        - label: This can be done without network calls, telemetry, or an LLM
+          required: true

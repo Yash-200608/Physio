@@ -1,0 +1,52 @@
+name: Bug report
+description: Something incorrect in capture, metrics, HUD, or exports
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Describe a reproducible problem. Do not attach raw camera footage that identifies other people without consent.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Expected vs actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Set CAMERA_URL=…
+        2. python src/main.py
+        3. …
+    validations:
+      required: true
+  - type: input
+    id: camera
+    attributes:
+      label: Camera
+      description: CAMERA_URL value or device (for example 0, 1, or a path).
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: Windows 11 / macOS 14 / Ubuntu 22.04
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: 3.11.x
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant console output (no full-body images).
+      render: text
